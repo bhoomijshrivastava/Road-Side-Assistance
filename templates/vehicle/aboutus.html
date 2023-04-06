@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">Who We Are!</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4">Hello All</h1>
+    <p class="lead">All We Have some genuine solutions to vehicle problems.</p>
+    <hr class="my-4">
+    <p>Explore our Website.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+  <marquee behavior="scroll" direction="left">
+    <img src="{% static "D:\RoadSideAssistance\static\images\merc.png" %}" width="120" height="80" alt="merc" />
+    <img src="{% static "D:\RoadSideAssistance\static\images\ford.png" %}" width="120" height="80" alt="ford" />
+   <img src="{% static "D:\RoadSideAssistance\static\images\vw.jpg" %}" width="120" height="80" alt="vw" />
+   <img src="{% static "D:\RoadSideAssistance\static\images\volvo.png" %}" width="120" height="80" alt="volvo" />
+   <img src="{% static "D:\RoadSideAssistance\static\images\bmw.jpg" %}" width="120" height="80" alt="bmw" />
+   <img src="{% static "D:\RoadSideAssistance\static\images\tata.png" %}" width="120" height="80" alt="tata" />
+   <img src="{% static "D:\RoadSideAssistance\static\images\audi.jpg" %}" width="120" height="80" alt="audi" />
+   <img src="{% static "D:\RoadSideAssistance\static\images\jeep.png" %}" width="120" height="80" alt="jeep" />
+   <img src="{% static "D:\RoadSideAssistance\static\images\landrover.jpg" %}" width="120" height="80" alt="landrover" />
+ </marquee>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>
